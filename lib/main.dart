@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: this.widget.homeScreen,
+      home: SafeArea(child: Container(child: this.widget.homeScreen)),
     );
   }
 }
